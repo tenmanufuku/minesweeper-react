@@ -1,3 +1,5 @@
+Disclosure: This project is based on a similar project done by Malik (https://www.malikbrowne.com/) who I used as a guideline.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
