@@ -1,0 +1,41 @@
+.board {
+  width: fit-content;
+  height: auto;
+  border: 1px solid #444;
+  border-bottom: none;
+  margin: 0 auto;
+  .row {
+    display: flex;
+    height: 20px;
+    &:last-child{
+      border-bottom: none;
+      height: 20px;
+    }
+    .cell {
+      border-right: 1px solid #444;
+      width: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid #444;
+      &.open{
+        background-color: #d4d4d4;
+        &:hover {
+          background-color: #d4d4d4;
+        }
+      }
+      &.open-flag{
+        background-color: green;
+      }
+      &:hover {
+        background-color: #eeeeee;
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+    //cell
+  }
+  //.row
+}
+//.board

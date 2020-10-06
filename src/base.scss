@@ -1,0 +1,23 @@
+@import "components/BoardHeader/base";
+@import "components/Board/base";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  #root {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .minesweeper {
+      display: flex;
+      flex-direction: column;
+      height: 592px;
+    }
+  }
+}

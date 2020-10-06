@@ -1,0 +1,86 @@
+.board-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border: solid 1px #000;
+  margin: 0 0 20px;
+  padding: 20px; }
+  .board-head h1 {
+    font-size: 16px;
+    border: 0;
+    flex: 1 0 100%;
+    margin: 0 0 10px; }
+  .board-head .flag-count,
+  .board-head .timer {
+    width: 55px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .board-head .reset {
+    font-size: 25px;
+    background-color: #000;
+    color: #fff; }
+  .board-head .difficulty {
+    flex: 1 0 100%;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    margin: 10px 0; }
+    .board-head .difficulty button {
+      padding: 5px 10px;
+      background-color: #000;
+      color: #fff;
+      margin: 0 10px;
+      border: 0; }
+
+.board {
+  width: fit-content;
+  height: auto;
+  border: 1px solid #444;
+  border-bottom: none;
+  margin: 0 auto; }
+  .board .row {
+    display: flex;
+    height: 20px; }
+    .board .row:last-child {
+      border-bottom: none;
+      height: 20px; }
+    .board .row .cell {
+      border-right: 1px solid #444;
+      width: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid #444; }
+      .board .row .cell.open {
+        background-color: #d4d4d4; }
+        .board .row .cell.open:hover {
+          background-color: #d4d4d4; }
+      .board .row .cell.open-flag {
+        background-color: green; }
+      .board .row .cell:hover {
+        background-color: #eeeeee; }
+      .board .row .cell:last-child {
+        border-right: none; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%; }
+  html #root,
+  body #root {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    html #root .minesweeper,
+    body #root .minesweeper {
+      display: flex;
+      flex-direction: column;
+      height: 592px; }
